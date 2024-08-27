@@ -20,21 +20,21 @@
     <body style="background-color: rgb(36, 6, 64);">
 
         <div class="row">
-            <div class="image-container"><img id="interact1" src="img/icons-26.svg" onmouseover="this.src='img/icons-34.svg';" onmouseout="this.src='img/icons-26.svg';" height="200" width="200"/></div>
-            <div class="image-container"><img id="boss1" src="img/icons-24.svg" onmouseover="this.src='img/icons-40.svg';" onmouseout="this.src='img/icons-24.svg';" height="200" width="200"/></div>
-            <div class="image-container"><img id="inventory1" src="img/icons-25.svg" onmouseover="this.src='img/icons-33.svg';" onmouseout="this.src='img/icons-25.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="interact1" src="img/icons-26.svg" onmousedown="this.src='img/icons-34.svg';" onmouseup="this.src='img/icons-26.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="boss1" src="img/icons-24.svg" onmousedown="this.src='img/icons-40.svg';" onmouseup="this.src='img/icons-24.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="inventory1" src="img/icons-25.svg" onmousedown="this.src='img/icons-33.svg';" onmouseup="this.src='img/icons-25.svg';" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img id="settings1" src="img/icons-23.svg" onmouseover="this.src='img/icons-32.svg';" onmouseout="this.src='img/icons-23.svg';" height="200" width="200"/></div>
-            <div class="image-container"><img id="stats1" src="img/icons-29.svg" onmouseover="this.src='img/icons-37.svg';" onmouseout="this.src='img/icons-29.svg';" height="200" width="200"/></div>
-            <div class="image-container"><img id="menu1" src="img/icons-30.svg" onmouseover="this.src='img/icons-38.svg';" onmouseout="this.src='img/icons-30.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="settings1" src="img/icons-23.svg" onmousedown="this.src='img/icons-32.svg';" onmouseup="this.src='img/icons-23.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="stats1" src="img/icons-29.svg" onmousedown="this.src='img/icons-37.svg';" onmouseup="this.src='img/icons-29.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="menu1" src="img/icons-30.svg" onmousedown="this.src='img/icons-38.svg';" onmouseup="this.src='img/icons-30.svg';" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img id="map1" src="img/icons-27.svg" onmouseover="this.src='img/icons-35.svg';" onmouseout="this.src='img/icons-27.svg';" height="200" width="200"/></div>
-            <div class="image-container"><img id="dream-machine1" src="img/icons-28.svg" onmouseover="this.src='img/icons-36.svg';" onmouseout="this.src='img/icons-28.svg';" height="200" width="200"/></div>
-            <div class="image-container"><img id="weapons1" src="img/icons-31.svg" onmouseover="this.src='img/icons-39.svg';" onmouseout="this.src='img/icons-31.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="map1" src="img/icons-27.svg" onmousedown="this.src='img/icons-35.svg';" onmouseup="this.src='img/icons-27.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="dream-machine1" src="img/icons-28.svg" onmousedown="this.src='img/icons-36.svg';" onmouseup="this.src='img/icons-28.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="weapons1" src="img/icons-31.svg" onmousedown="this.src='img/icons-39.svg';" onmouseup="this.src='img/icons-31.svg';" height="200" width="200"/></div>
         </div>
         
         <script>
@@ -49,15 +49,15 @@
             var sound9 = new buzz.sound("sound/menu1.mp3");
 
             window.onload = function() {
-                document.getElementById('boss1').addEventListener('mouseover', function () {sound1.play();});
-                document.getElementById('interact1').addEventListener('mouseover', function () {sound2.play();});
-                document.getElementById('inventory1').addEventListener('mouseover', function () {sound3.play();});
-                document.getElementById('map1').addEventListener('mouseover', function () {sound4.play();});
-                document.getElementById('settings1').addEventListener('mouseover', function () {sound5.play();});
-                document.getElementById('weapons1').addEventListener('mouseover', function () {sound6.play();});
-                document.getElementById('dream-machine1').addEventListener('mouseover', function () {sound7.play();});
-                document.getElementById('stats1').addEventListener('mouseover', function () {sound8.play();});
-                document.getElementById('menu1').addEventListener('mouseover', function () {sound9.play();});
+                document.getElementById('boss1').addEventListener('mousedown', function () {sound1.play();});
+                document.getElementById('interact1').addEventListener('mousedown', function () {sound2.play();});
+                document.getElementById('inventory1').addEventListener('mousedown', function () {sound3.play();});
+                document.getElementById('map1').addEventListener('mousedown', function () {sound4.play();});
+                document.getElementById('settings1').addEventListener('mousedown', function () {sound5.play();});
+                document.getElementById('weapons1').addEventListener('mousedown', function () {sound6.play();});
+                document.getElementById('dream-machine1').addEventListener('mousedown', function () {sound7.play();});
+                document.getElementById('stats1').addEventListener('mousedown', function () {sound8.play();});
+                document.getElementById('menu1').addEventListener('mousedown', function () {sound9.play();});
 
             };
         </script>
