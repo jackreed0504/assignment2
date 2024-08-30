@@ -49,15 +49,15 @@
             var sound9 = new buzz.sound("sound/menu1.mp3");
 
             window.onload = function() {
-                document.getElementById('boss1').addEventListener('mouseover', function () {sound1.play();});
-                document.getElementById('interact1').addEventListener('mouseover', function () {sound2.play();});
-                document.getElementById('inventory1').addEventListener('mouseover', function () {sound3.play();});
-                document.getElementById('map1').addEventListener('mouseover', function () {sound4.play();});
-                document.getElementById('settings1').addEventListener('mouseover', function () {sound5.play();});
-                document.getElementById('weapons1').addEventListener('mouseover', function () {sound6.play();});
-                document.getElementById('dream-machine1').addEventListener('mouseover', function () {sound7.play();});
-                document.getElementById('stats1').addEventListener('mouseover', function () {sound8.play();});
-                document.getElementById('menu1').addEventListener('mouseover', function () {sound9.play();});
+                document.getElementById('boss1').addEventListener('mousedown', function () {sound1.play();});
+                document.getElementById('interact1').addEventListener('mousedown', function () {sound2.play();});
+                document.getElementById('inventory1').addEventListener('mousedown', function () {sound3.play();});
+                document.getElementById('map1').addEventListener('mousedown', function () {sound4.play();});
+                document.getElementById('settings1').addEventListener('mousedown', function () {sound5.play();});
+                document.getElementById('weapons1').addEventListener('mousedown', function () {sound6.play();});
+                document.getElementById('dream-machine1').addEventListener('mousedown', function () {sound7.play();});
+                document.getElementById('stats1').addEventListener('mousedown', function () {sound8.play();});
+                document.getElementById('menu1').addEventListener('mousedown', function () {sound9.play();});
 
             };
         </script>
