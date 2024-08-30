@@ -33,7 +33,7 @@
 
         <div class="row">
             <div class="image-container"><img id="map1" src="img/icons-27.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="dream-machine1" src="img/icons-28.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="dreammachine1" src="img/icons-28.png" height="200" width="200"/></div>
             <div class="image-container"><img id="weapons1" src="img/icons-31.png" height="200" width="200"/></div>
         </div>
         
@@ -89,9 +89,9 @@
 
             const dreammachine = document.getElementById('dream-machine1')
             const sound7 = new Audio ("sound/dreammachine1.mp3");
-            dream-machine1.onpointerdown = () => {
+            dreammachine1.onpointerdown = () => {
                 sound7.play ()
-                dream-machine1.src = 'img/icons-36.png'
+                dreammachine1.src = 'img/icons-36.png'
                 setTimeout (() => dream-machine1.src = 'img/icons-28.png', 500)
             }
 
